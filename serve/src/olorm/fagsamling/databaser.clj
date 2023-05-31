@@ -1,4 +1,21 @@
 ;; # Relasjonell data i Datascript og SQLite
+;;
+;; Agenda:
+;;
+;; 1. Motivasjon: https://roamresearch.com/#/app/teod/page/hZaGT2_7K
+;;
+;; 2. Intro til Clojure.
+;;    Data, verdier.
+;;    https://learnxinyminutes.com/docs/clojure/
+;;
+;;    Mål: dekke data-literals, og grunnleggende funksjoner fra data til data.
+;;    Fint om jeg får hjelp her!
+;;    Still spørsmål!
+;;
+;; 3. Datamodellering i Clojure.
+;;    SQLite (SQL) og Datascript.
+
+;; ---
 
 (ns olorm.fagsamling.databaser
   (:require
@@ -9,6 +26,8 @@
 
 (defn uuid []
   (str (java.util.UUID/randomUUID)))
+
+;; Den bruker vi sånn:
 
 (uuid)
 
