@@ -38,6 +38,21 @@
 
 ;; ---
 
+
+;; Javascript:
+;;
+;;     (1 + 1)
+;;     plus(1, 1)
+;;
+;;     (plus 1 1)
+;;
+;; Clojure
+;;
+;;     (+ 1 1)
+;;     (plus 1 1)
+
+(+ 5 5)
+
 ^{:nextjournal.clerk/toc true}
 (ns olorm.fagsamling.databaser
   (:require
@@ -69,17 +84,31 @@
                     (uuid) "Teodor :)"])
     (jdbc/execute! conn
                    ["INSERT INTO person (uuid, navn) VALUES (?, ?)"
-                    (uuid) "sindreeeeee"])
+                    (uuid) "sindreeeeeeeeeeeeeeeeeee"])
     (clerk/table (jdbc/execute! conn
                                 ["SELECT * FROM person"]))))
+
+"string"
+
+::teodor ;; keyword med namespace
+`teodor  ;; symbol med namespace
+
+'teodor
+
+`(teodor lina)
+'(teodor lina)
+
+(into () (for [i (range 20)] [i "hei"]))
 
 ;; ## Personer med Datascript
 
 (let [schema {:person/name {}
               :person/uuid {}}
       conn   (datascript/create-conn schema)]
-  (datascript/transact! conn [{:person/name "Teodor :)" :person/uuid (uuid)}
-                              {:person/name "sindreeee" :person/uuid (uuid)}])
+  (datascript/transact! conn [{:person/uuid (uuid)
+                               :person/name "Teodor :)"}
+                              {:person/name "sindreeee"
+                               :person/uuid (uuid)}])
   (datascript/q '[:find ?navn ?uuid
                   :where
                   [?entitet :person/name ?navn]
