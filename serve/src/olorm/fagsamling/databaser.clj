@@ -9,6 +9,7 @@
 ;; 2. Jeg vet ikke hva dere er nysgjerrige på.
 ;;
 ;; Men jeg ønsker å helpe dere å lære ting dere er nysgjerrige på!!!
+;; Da trenger jeg hjelp fra dere :)
 ;;
 ;; **Agenda**:
 ;;
