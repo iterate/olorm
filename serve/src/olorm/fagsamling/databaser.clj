@@ -1,6 +1,16 @@
 ;; # Relasjonell data i Datascript og SQLite
 ;;
-;; Agenda:
+;; **Format**: noen forberedelser, så "choose your own adventure".
+;; Jeg vet ikke hva dere ikke vet.
+;; Målgruppen er folk som _aldri har skrevet Clojure_.
+;; Men det krever at dere stiller spørsmål!
+;;
+;; 1. Jeg vet ikke hva dere ikke vet.
+;; 2. Jeg vet ikke hva dere er nysgjerrige på.
+;;
+;; Men jeg ønsker å helpe dere å lære ting dere er nysgjerrige på!!!
+;;
+;; **Agenda**:
 ;;
 ;; 1. Motivasjon: https://roamresearch.com/#/app/teod/page/hZaGT2_7K
 ;;
@@ -14,6 +24,15 @@
 ;;
 ;; 3. Datamodellering i Clojure.
 ;;    SQLite (SQL) og Datascript.
+;;
+;;
+;; **Smørbrødliste, Teodor**
+;;
+;; [regnbuetabeller], [datascript-intro], [meetup]
+;;
+;; [regnbuetabeller]: https://github.clerk.garden/teodorlu/clerk-stuff/commit/7bd85d28726a0f166d8f4952b0dbf70936531b3e/src/rainbow_tables.html
+;; [datascript-intro]: https://github.com/kristianmandrup/datascript-tutorial/
+;; [meetup]: https://www.meetup.com/clojure-oslo/events/293381372/
 
 ;; ---
 
