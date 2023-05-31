@@ -28,8 +28,9 @@
 ;;
 ;; **Smørbrødliste, Teodor**
 ;;
-;; [regnbuetabeller], [datascript-intro], [meetup]
+;; [regnbuetabeller], [datascript-intro], [meetup], [hva-er-fp]
 ;;
+;; [hva-er-fp]: https://play.teod.eu/hva-er-funksjonell-programmering/
 ;; [regnbuetabeller]: https://github.clerk.garden/teodorlu/clerk-stuff/commit/7bd85d28726a0f166d8f4952b0dbf70936531b3e/src/rainbow_tables.html
 ;; [datascript-intro]: https://github.com/kristianmandrup/datascript-tutorial/
 ;; [meetup]: https://www.meetup.com/clojure-oslo/events/293381372/
