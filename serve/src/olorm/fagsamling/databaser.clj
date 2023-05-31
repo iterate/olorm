@@ -17,10 +17,12 @@
 
 ;; ---
 
+^{:nextjournal.clerk/toc true}
 (ns olorm.fagsamling.databaser
   (:require
    [next.jdbc :as jdbc]
-   [nextjournal.clerk :as clerk]))
+   [nextjournal.clerk :as clerk]
+   [datascript.core :as datascript]))
 
 ;; Vi kan kalle en Java-funksjon for å lage UUID-er:
 
@@ -31,7 +33,7 @@
 
 (uuid)
 
-;; Sånn kan vi modellere personer med navn i SQLite.
+;; ## Personer med SQLite
 ;;
 ;; `:memory:` betyr en in-memory-database som ikke lagres. Sånne er fine til
 ;; feks enhesttester.
@@ -49,3 +51,32 @@
                     (uuid) "sindreeeeee"])
     (clerk/table (jdbc/execute! conn
                                 ["SELECT * FROM person"]))))
+
+;; ## Personer med Datascript
+
+(let [schema {:person/name {}
+              :person/uuid {}}
+      conn   (datascript/create-conn schema)]
+  (datascript/transact! conn [{:person/name "Teodor :)" :person/uuid (uuid)}
+                              {:person/name "sindreeee" :person/uuid (uuid)}])
+  (datascript/q '[:find ?navn ?uuid
+                  :where
+                  [?entitet :person/name ?navn]
+                  [?entitet :person/uuid ?uuid]]
+                @conn))
+
+;; nå får vi et "sett av tupler" tilbake.
+;; hvis vi vil, kan vi lage tabell i stedet:
+
+(let [schema {:person/name {}
+              :person/uuid {}}
+      conn   (datascript/create-conn schema)]
+  (datascript/transact! conn [{:person/name "Teodor :)" :person/uuid (uuid)}
+                              {:person/name "sindreeee" :person/uuid (uuid)}])
+  (clerk/table (for [[n u]
+                     (datascript/q '[:find ?navn ?uuid
+                                     :where
+                                     [?entitet :person/name ?navn]
+                                     [?entitet :person/uuid ?uuid]]
+                                   @conn)]
+                 {"Navn" n "UUID" u})))
