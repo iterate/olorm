@@ -21,6 +21,7 @@
 (defn index [_req]
   (let [mikrobloggeriet-announce-url "https://garasjen.slack.com/archives/C05355N5TCL"
         github-olorm-url "https://github.com/iterate/olorm/"
+        github-olorm-repo-name "github.com/iterate/olorm"
         _tech-forum-url "https://garasjen.slack.com/archives/C2K35RDNJ"
         teodor-url "https://teod.eu/"
         hops-url "https://www.headless-operations.no/"
@@ -51,7 +52,7 @@
        [:p
         "Mikrobloggeriet er et initiativ der teknologer fra " [:a {:href iterate-url} "Iterate"] " deler ting de bryr seg om i hverdagen. "
         "Vi velger å publisere fritt tilgjengelig på Internett fordi vi har tro på å dele kunnskap. "
-        "Innhold og kode for Mikrobloggeriet på " [:a {:href github-olorm-url} "github.com/iterate/olorm"] ". "
+        "Innhold og kode for Mikrobloggeriet på " [:a {:href github-olorm-url} github-olorm-repo-name] ". "
         "Mikrobloggeriet kjører på " [:a {:href hops-url} "Headless Operations"] ". "
         "Hvis du har spørsmål eller kommentarer, kan du ta kontakt med " [:a {:href teodor-url} "Teodor"] "."]]
 
