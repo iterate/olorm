@@ -21,3 +21,5 @@ Det er i alle fall nødvendig.
 Vi driver konsulentbedrift, og det er sånn konsulentsalg funker.
 Hvis de som kjøper folk de ikke er fornøyd med, kan de i alle fall si opp kontrakten.
 Men kanskje man faktisk blir fornøyd, selv om man får noe man ikke liker.
+
+—Teodor
