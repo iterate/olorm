@@ -80,7 +80,7 @@ Her er en start:
   Eksempelet feiler fordi `FAIL` ikke er en systemkommando.
   Alle stegene i en jobb kjører systemkommandoer.
 
-## Er testing og CICD verdt det?
+## Er testing og CICD verdt innsatsen?
 
 Min konklusjon så langt er _ja_.
 Hvis man ikke har god testdekning og kontroll på hvilke commits som er grønne og røde, blir det utrygt å skrive kode.
