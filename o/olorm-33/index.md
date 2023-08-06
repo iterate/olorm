@@ -8,6 +8,16 @@ Vi utviklere må lære nye ting hver dag.
 Det er en fantastisk mulighet, og en ganske stor byrde.
 Alle tingene vi kan i dag har vi lært på et tidspunkt, og alle tingene vi ønsker å kunne gjøre i framtiden må vi gjøre oss en innsats for å lære.
 
+## Hva er CICD?
+
+Mine definisjoner:
+
+- **Continuous integration** (CI) handler om at vi _kontinuerlig sjekker om systemet vårt fungerer når vi endrer det_.
+  I Mikrobloggeriet betyr CI "Vi kjører alle enhetstestene på alle commits".
+- **Continuous delivery** (CD) handler om at vi kontinuerlig oppdaterer det kjørende systemet.
+  Vi kan sette koden vår i produksjon når vi vil.
+  I Mikrobloggeriet betyr CD "Vi setter setter automatisk alle endringer i produksjon hvis testene er grønne".
+
 ## Om å kode på mikrobloggeriet
 
 Når jeg har jobbet med Mikrobloggeriet-koden har jeg fulgt noen prinsipper:
@@ -86,3 +96,27 @@ Her er en start:
 Min konklusjon så langt er _ja_.
 Hvis man ikke har god testdekning og kontroll på hvilke commits som er grønne og røde, blir det utrygt å skrive kode.
 Og når det er utrygt å endre kode, er det vanskeligere å komme framover på produktet.
+
+<!--
+  Kommentar: jeg synes avsnittet over blir litt for bastant.
+  Det svarer ikke på _når_ man bør innføre CICD.
+
+  Jeg innførte CICD da jeg skulle få med meg flere på jobbing.
+  Kanskje det er en OK tommelfingerrelegel?
+-->
+
+## Hva er dine erfaringer med CICD?
+
+CICD er ikke noe vi lærer om på universitetet.
+Det var i alle fall ikke noe jeg var innom.
+CICD handler om hvordan vi jobber sammen _i praksis_.
+
+- Har du vært på prosjekter hvor CI eller CD har latt deg jobbe mer effektivt?
+  Hvorfor?
+- Har du innført CI eller CD på et prosjekt noen gang?
+  Hvordan har det vært?
+
+Jeg vil gjerne høre!
+Dette er noe jeg tror det er lurt at vi snakker om og deler erfaringer om.
+
+—Teodor
