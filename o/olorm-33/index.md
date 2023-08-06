@@ -33,6 +33,8 @@ Jeg ville da få til følgende:
 
 ## Noen refleksjoner om CICD
 
+Hva synes jeg om CICD etter å ha prøvd litt?
+
 **Utrolig fint å kunne lene seg på grønne tester i commit-loggen.**
 Det gir meg ro!
 
