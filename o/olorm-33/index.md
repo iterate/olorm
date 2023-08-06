@@ -78,7 +78,8 @@ Her er en start:
   ```
   
   Eksempelet feiler fordi `FAIL` ikke er en systemkommando.
-  Alle stegene i en jobb kjører systemkommandoer.
+  I stedet for `- run: FAIL` kunne man kjørt `go test`, `npm test` eller `clojure -A:run-tests`.
+  Da skal `go test` returnere systemkommando 0 hvis alt er OK, og noe annet enn 0 hvis testene feiler.
 
 ## Er testing og CICD verdt innsatsen?
 
