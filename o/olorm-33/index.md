@@ -5,12 +5,15 @@
 
 Nope!
 Vi utviklere må lære nye ting hver dag.
-Det er en fantastisk mulighet, og en ganske stor byrde.
-Alle tingene vi kan i dag har vi lært på et tidspunkt, og alle tingene vi ønsker å kunne gjøre i framtiden må vi gjøre oss en innsats for å lære.
+Det er en fantastisk mulighet; hvis vi kontinuerlig lærer nye ting, kan vi bli skikkelig flinke.
+Det er også en byrde: det finnes så ufattelig mange ting vi må lære oss.
+
+Jeg har nettopp satt opp CICD på Mikrobloggeriet.
+Her er mine erfaringer.
 
 ## Hva er CICD?
 
-Mine definisjoner:
+Først, la oss definere hva vi snakker om.
 
 - **Continuous integration** (CI) handler om at vi _kontinuerlig sjekker om systemet vårt fungerer når vi endrer det_.
   I Mikrobloggeriet betyr CI "Vi kjører alle enhetstestene på alle commits".
