@@ -12,10 +12,10 @@ Alle tingene vi kan i dag har vi lært på et tidspunkt, og alle tingene vi øns
 
 Når jeg har jobbet med Mikrobloggeriet-koden har jeg fulgt noen prinsipper:
 
-1. Vi demonstrerer ekte bruk før vi koder masse.
-   Hvis ingen vil skrive, skal vi ikke bruke tid på å kode.
-2. I koden skal vi _vente med abstraksjoner_.
-   Vi vil heller ha få filer som gjør for mye, for så og trekke ut senere, enn det motsatte.
+1. Vi produktverdi før vi legger mye jobb i koden.
+   Hvis ingen vil skrive mikroblogger, skal vi heller ikke lage et stort system for mikroblogging.
+2. I koden skal vi _vente med å abstrahere_.
+   Vi vil heller ha for spesifikk enn for abstrakt kode.
 
 Jeg synes det har fungert bra til nå.
 Men det har gitt noen utfordringer:
