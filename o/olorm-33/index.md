@@ -8,7 +8,7 @@ Vi utviklere må lære nye ting hver dag.
 Det er en fantastisk mulighet, og en ganske stor byrde.
 Alle tingene vi kan i dag har vi lært på et tidspunkt, og alle tingene vi ønsker å kunne gjøre i framtiden må vi gjøre oss en innsats for å lære.
 
-## Status på koden i Mikrobloggeriet
+## Om å kode på mikrobloggeriet
 
 Når jeg har jobbet med Mikrobloggeriet-koden har jeg fulgt noen prinsipper:
 
