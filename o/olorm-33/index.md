@@ -25,7 +25,7 @@ Først, la oss definere hva vi snakker om.
 
 Når jeg har jobbet med Mikrobloggeriet-koden har jeg fulgt noen prinsipper:
 
-1. Vi produktverdi før vi legger mye jobb i koden.
+1. Vi skal se produktverdi før vi legger mye jobb i koden.
    Hvis ingen vil skrive mikroblogger, skal vi heller ikke lage et stort system for mikroblogging.
 2. I koden skal vi _vente med å abstrahere_.
    Vi vil heller ha for spesifikk enn for abstrakt kode.
