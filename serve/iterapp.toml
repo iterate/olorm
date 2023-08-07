@@ -1,2 +1,3 @@
 port = 7223
-domains = ["mikrobloggeriet.no"]
+# domains = ["mikrobloggeriet.no"]
+# Remove the domain and deploy - to migrate off this repo
