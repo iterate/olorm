@@ -1,5 +1,7 @@
 # Mikrobloggeriet
 
+> **THIS REPOSITORY HAS MOVED**: https://github.com/iterate/mikrobloggeriet/
+
 https://mikrobloggeriet.no/
 
 _A collection of technical microblogs in Norwegian._
